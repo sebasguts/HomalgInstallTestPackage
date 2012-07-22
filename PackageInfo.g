@@ -239,7 +239,7 @@ PackageWWWHome := "",
 # in case of several help books give a list of such records here:
 PackageDoc := rec(
   # use same as in GAP            
-  BookName  := "Sebas",
+  BookName  := "HomalgInstallTestPackage",
   # format/extension can be one of .zoo, .tar.gz, .tar.bz2, -win.zip
   Archive := 
       "",
