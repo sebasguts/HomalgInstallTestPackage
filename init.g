@@ -33,3 +33,6 @@
 #ReadPackage( "Convex", "gap/ExternalSystem.gd" );
 
 #ReadPackage( "Convex", "gap/Polyhedron.gd" );
+
+ReadPackage( "HomalgInstallTestPackage", "gap/Declarations.gd" );
+
