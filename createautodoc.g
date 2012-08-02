@@ -1,5 +1,5 @@
-LoadPackage( "ToolsForHomalg" );
+LoadPackage( "AutomaticDocumentation" );
 
-CreateAutomaticDocumentation( "HomalgInstallTestPackage", "gap/documentation_file.d", "doc/automatic_documentation.xml" );
+CreateAutomaticDocumentation( "HomalgInstallTestPackage", "gap/documentation_file.d", "doc/", true, [ [ "Intro", "This is a test docu" ] ] );
 
 QUIT;

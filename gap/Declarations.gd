@@ -9,43 +9,61 @@
 #############################################################################
 
 ##
-HomalgDeclareCategory( "IsATestCategory",
-                       IsObject,
-                       "This provides test category",
-                       "cat" );
+DeclareCategoryWithDocumentation( "IsATestCategory",
+                                  IsObject,
+                                  "This provides test category",
+                                  "cat",
+                                  [ "Chapter1","Section1" ]
+                                );
 
 ##
-HomalgDeclareCategory( "IsASecondTestCategory",
-                       IsATestCategory,
-                       "This is a test without a given argument" );
+DeclareCategoryWithDocumentation( "IsASecondTestCategory",
+                                  IsATestCategory,
+                                  "This is a test without a given argument" );
 
 ##
-HomalgDeclareAttribute( "IsATestAttribute",
+DeclareAttributeWithDocumentation( "IsATestAttribute",
                         IsATestCategory,
                         "This is a first test attribute",
                         "a test object",
-                        "attr" );
+                        "attr",
+                        [ "Chapter1", "Attributes" ]
+                      );
 
 ##
-HomalgDeclareAttribute( "IsASecondTestAttribute",
+DeclareAttributeWithDocumentation( "IsASecondTestAttribute",
                         IsASecondTestCategory,
                         "This is another test attribute",
-                        "a different test object" );
+                        "a different test object",
+                        [ "Chapter1", "Attributes" ]
+                      );
 
 ##
-HomalgDeclareProperty( "IsATestProperty",
+DeclarePropertyWithDocumentation( "IsATestProperty",
                        IsATestCategory,
                        "This is a test property",
-                       "propobj" );
+                       "propobj",
+                       [ "Chapter_2", "Properties_of_Objects" ]
+                     );
 
 ##
-HomalgDeclareProperty( "IsAnotherTestProperty",
+DeclarePropertyWithDocumentation( "IsAnotherTestProperty",
                        IsASecondTestCategory,
                        "This is another test property" );
 
 ##
-HomalgDeclareOperation( "IsATestOperation",
+DeclareOperationWithDocumentation( "IsATestOperation",
                         [ IsATestCategory, IsASecondTestCategory and IsAnotherTestProperty ],
                         "This operation mixes the arguments <A>test1</A> and <A>sebas</A>.",
                         "a calculated object",
                         "test1,sebas" );
+
+##
+DeclareGlobalVariableWithDocumentation( "ATestVariable",
+                        "This is a test variable" );
+
+##
+DeclareGlobalFunctionWithDocumentation( "ATestFunction",
+                        "this is a test function",
+                        "a value",
+                        [ "Chapter_2", "Properties_of_Objects" ] );

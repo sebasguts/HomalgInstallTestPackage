@@ -268,7 +268,7 @@ Dependencies := rec(
   # insensitive, least version denoted with '>=' prepended to version string.
   # without these, the package will not load
   # NeededOtherPackages := [["GAPDoc", ">= 0.99"]],
-  NeededOtherPackages := [ [ "ToolsForHomalg", ">=2011.08.01" ] ],
+  NeededOtherPackages := [ [ "ToolsForHomalg", ">=2011.08.01" ], [ "AutomaticDocumentation", ">=2012.07.29" ] ],
   # without these the package will issue a warning while loading
   # SuggestedOtherPackages := [],
   SuggestedOtherPackages := [ [ "GAPDoc", ">=0.99" ] ],
